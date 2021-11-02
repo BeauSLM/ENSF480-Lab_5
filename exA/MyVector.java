@@ -27,6 +27,8 @@ public class MyVector<E extends Number & Comparable<E>> {
     }
 
     public void display() {
-        // display all content in the storageM
+        for (Item<E> item : storageM) {
+            System.out.println(item);
+        }
     }
 }
