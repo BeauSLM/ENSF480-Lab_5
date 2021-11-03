@@ -10,7 +10,7 @@ public class SelectionSorter<E extends Number & Comparable<E>> implements Sorter
             //finds the smallest item past i
             for(int j = i + 1; j < arr.size(); j++) {
                 if(arr.get(j).getItem().compareTo(arr.get(min).getItem()) < 0)
-                    min = j; // where do i declare???
+                    min = j;
             }
             //swaps smallest index and current index items
             Item<E> temp = arr.get(i);
