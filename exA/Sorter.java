@@ -1,5 +1,5 @@
 import java.util.ArrayList;
 
 public interface Sorter <E extends Number & Comparable<E>> {
-    void sort(ArrayList<Item<E>> arr); // diff return type?
+    public void sort(ArrayList<Item<E>> arr); // diff return type?
 }
