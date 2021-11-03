@@ -1,20 +1,19 @@
 import java.util.ArrayList;
 
-// IS STORAGEM THE LIBRARY ARRAYLIST??????
 public class MyVector<E extends Number & Comparable<E>> {
     private ArrayList<Item<E>> storageM;
-    private Sorter sorter;
+    private Sorter<E> sorter;
 
     public MyVector(final int n) {
         storageM = new ArrayList<Item<E>>(n);
     }
 
     public MyVector(final ArrayList<Item<E>> arr) {
-        // TODO: make storageM an exact copy of arr
+        storageM = new ArrayList<>(arr);
     }
 
     public void add(final Item<E> value) {
-        // TODO: adds value to storageM
+        storageM.add(value);
     }
 
     public void setSortStrategy(final Sorter <E> s) {
@@ -22,13 +21,12 @@ public class MyVector<E extends Number & Comparable<E>> {
     }
 
     public void performSort() {
-        // FIXME: is this right???
-        sorter.sort();
+        sorter.sort(storageM);
     }
 
     public void display() {
         for (Item<E> item : storageM) {
-            System.out.println(item);
+            System.out.print(item + "\t");
         }
     }
 }
