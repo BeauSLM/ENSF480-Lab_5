@@ -26,7 +26,7 @@ public class MyVector<E extends Number & Comparable<E>> {
 
     public void display() {
         for (Item<E> item : storageM) {
-            System.out.print(item + "\t");
+            System.out.print(item.getItem() + "\t");
         }
     }
 }

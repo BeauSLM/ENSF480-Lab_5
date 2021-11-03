@@ -9,16 +9,16 @@ public class DemoStrategyPattern {
 		
 		// Create a Random object to generate values between 0
 		Random rand = new Random();  
-       
+
 		// adding 5 randomly generated numbers into MyVector object v1
-	   for(int i = 4; i >=0; i--) {
-		   Item<Double> item;
-		   item = new Item<Double> (Double.valueOf(rand.nextDouble()*100));
-		  v1.add(item);
-	   }
-	   
+	    for(int i = 4; i >=0; i--) {
+		    Item<Double> item;
+		    item = new Item<Double> (Double.valueOf(rand.nextDouble()*100));
+		    v1.add(item);
+	    }
+
 	    // displaying original data in MyVector v1
-       System.out.println("The original values in v1 object are:");
+        System.out.println("The original values in v1 object are:");
 		v1.display();
 		
 		// choose algorithm bubble sort as a strategy to sort object v1
@@ -39,7 +39,7 @@ public class DemoStrategyPattern {
 			item = new Item<Integer> (Integer.valueOf(rand.nextInt(50)));
 			v2.add(item);
 			}
-		   
+
 	        System.out.println("\nThe original values in v2 object are:");
 			v2.display();
 			v2.setSortStrategy(new InsertionSorter<Integer>());;
