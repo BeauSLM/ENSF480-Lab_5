@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Observer;
 
 public class DoubleArrayListSubject implements Subject {
     public ArrayList<Double> data; // our data
@@ -7,8 +6,8 @@ public class DoubleArrayListSubject implements Subject {
 
     // initializes data members to new ArrayLists<>
     public DoubleArrayListSubject() {
-        data = new ArrayList<>();
-        observers = new ArrayList<>();
+        data = new ArrayList<Double>();
+        observers = new ArrayList<Observer>();
     }
 
     // adds a data point, notifies observers
@@ -18,31 +17,36 @@ public class DoubleArrayListSubject implements Subject {
     }
 
     // adds a data point, notifies observers
-    public void setData(int index, double d) {
+    public void setData(double d, int index) {
         data.set(index, d);
         notifyAllObservers();
     }
 
     // populates data with an array, notifies all observers
     public void populate(double [] arr) {
-        data = new ArrayList<>(arr);
+        data.clear();
+        
+        for (double d : arr) {
+            data.add(d);
+        }
         notifyAllObservers();
     }
 
     // adds an observer to the array
     public void registerObserver(Observer o) {
         observers.add(o);
+        o.update(data);
     }
 
     // removes an observer from the array
-    public void removeObserver(Observer o) {
+    public void remove(Observer o) {
         observers.remove(o);
     }
 
     // notifies all observers
     public void notifyAllObservers() {
         for (Observer o : observers) {
-            o.update();
+            o.update(data);
         }
     }
 
