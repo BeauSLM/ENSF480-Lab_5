@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Observer;
 
 public class DoubleArrayListSubject implements Subject {
     public ArrayList<Double> data; // how to make visible to observer?
