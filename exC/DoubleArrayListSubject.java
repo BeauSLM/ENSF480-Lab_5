@@ -9,14 +9,14 @@ public class DoubleArrayListSubject implements Subject {
         observers = new ArrayList<>();
     }
 
-    public DoubleArrayListSubject(ArrayList<Double> data) { this.data = data; }
-
     public void addData(double d) {
         this.data.add(d);
+        notifyAllObservers();
     }
 
     public void setData(int index, double d) {
         data.set(index, d);
+        notifyAllObservers();
     }
 
     public void populate(double [] arr) {
