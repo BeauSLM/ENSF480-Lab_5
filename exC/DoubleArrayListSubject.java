@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 
-public class DoublArrayListSubject implements Subject {
+public class DoubleArrayListSubject implements Subject {
     public ArrayList<Double> data; // how to make visible to observer?
 
-    public DoublArrayListSubject() {
+    public DoubleArrayListSubject() {
         data = new ArrayList<>();
     }
 
