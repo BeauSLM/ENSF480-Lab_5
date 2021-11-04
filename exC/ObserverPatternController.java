@@ -1,11 +1,11 @@
 public class ObserverPatternController {
- 	public static void main(String []s) {
+	public static void main(String []s) {
 		double [] arr = {10, 20, 33, 44, 50, 30, 60, 70, 80, 10, 11, 23, 34, 55};
 		System.out.println("Creating object mydata with an empty list -- no data:");
 		DoubleArrayListSubject mydata = new DoubleArrayListSubject();
 		System.out.println("Expected to print: Empty List ...");
 		mydata.display();
- 		mydata.populate(arr);
+		mydata.populate(arr);
 		System.out.println("mydata object is populated with: 10, 20, 33, 44, 50, 30, 60, 70, 80, 10, 11, 23, 34, 55 ");
 		System.out.print("Now, creating three observer objects: ht, vt, and hl ");
 		System.out.println("\nwhich are immediately notified of existing data with different views.");
