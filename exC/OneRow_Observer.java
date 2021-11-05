@@ -5,7 +5,9 @@
 import java.util.ArrayList;
 
 public class OneRow_Observer implements Observer {
+    private ArrayList<Double> data; // our data
     private DoubleArrayListSubject subject;
+
     public OneRow_Observer(DoubleArrayListSubject subject) {
         this.subject = subject; 
         subject.registerObserver(this);
@@ -13,17 +15,17 @@ public class OneRow_Observer implements Observer {
 
     @Override
     public void update(ArrayList<Double> arr) {
-        this.subject.data = arr;
+        data = new ArrayList<>(arr);
         System.out.println("\nNotification to One-Row Table Observer: Data Changed:");
         display();
     }
 
     public void display() {
-        if(subject.data.isEmpty()) {
+        if(data.isEmpty()) {
             System.out.println("Empty List ...");
         }
         else {
-            for(Double d : subject.data) {
+            for(Double d : data) {
                 System.out.print(d + "\t");
             }
             System.out.println();

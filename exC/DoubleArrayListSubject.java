@@ -5,7 +5,7 @@
 import java.util.ArrayList;
 
 public class DoubleArrayListSubject implements Subject {
-    public ArrayList<Double> data; // our data
+    private ArrayList<Double> data; // our data
     private ArrayList<Observer> observers; // observers of this subject
 
     // initializes data members to new ArrayLists<>
