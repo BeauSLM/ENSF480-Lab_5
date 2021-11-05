@@ -1,3 +1,8 @@
+/* ENSF 480 - Lab 5 - Exercise A and B
+	File: InsertionSorter.java
+	For: Lab 5 Exercise A
+    Written By: Quentin J, Beau M
+ */
 import java.util.ArrayList;
 
 //insersion sort - inserts unsorted values from right into its correct position on the left

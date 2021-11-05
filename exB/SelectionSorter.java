@@ -1,3 +1,9 @@
+/* ENSF 480 - Lab 5 - Exercise A and B
+    File: SelectionSorter.java
+    For: Lab 5 Exercise B
+    Written By: Quentin J, Beau M
+ */
+
 import java.util.ArrayList;
 
 //selection sort - selects the smallest element for the current slot and swaps, iterates left to right

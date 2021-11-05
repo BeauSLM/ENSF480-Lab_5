@@ -1,6 +1,5 @@
-/* ENSF 480 - Lab 5 Exercise A and B
- * M. Moussavi, October 2021
- * 
+/* ENSF 480 - Lab 5 - Exercise A and B
+	File: Item.java
  */
 
 class Item <E extends Number & Comparable<E> >{
