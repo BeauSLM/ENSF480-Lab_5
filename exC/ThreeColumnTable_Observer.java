@@ -1,3 +1,7 @@
+/* ENSF 480 - Lab 5 - Exercise C
+    File: ThreeColumnTable_Observer.java
+    Written By: Quentin J, Beau M
+ */
 import java.util.ArrayList;
 
 public class ThreeColumnTable_Observer implements Observer {

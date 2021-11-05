@@ -1,3 +1,8 @@
+/* ENSF 480 - Lab 5 - Exercise A and B
+	File: BubbleSorter.java
+	For: Lab 5 Exercise A
+    Written By: Quentin J, Beau M
+ */
 import java.util.ArrayList;
 
 //bubble sort - iterates, comparing with the next element and swapping until sorted

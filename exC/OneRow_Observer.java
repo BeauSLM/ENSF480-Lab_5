@@ -1,3 +1,7 @@
+/* ENSF 480 - Lab 5 - Exercise C
+    File: OneRow_Observer.java
+    Written By: Quentin J, Beau M
+ */
 import java.util.ArrayList;
 
 public class OneRow_Observer implements Observer {
